@@ -1,0 +1,30 @@
+RewriteEngine On
+RewriteRule ^cinemas/?$ cinemas.php
+RewriteRule cinemas/(.*)$ cinemas.php?id=$1 [QSA,NC,L]
+
+RewriteRule ^customers/?$ customers.php
+RewriteRule customers/(.*)$ customers.php?id=$1 [QSA,NC,L]
+
+RewriteRule ^employees/?$ employees.php
+RewriteRule employees/(.*)$ employees.php?id=$1 [QSA,NC,L]
+
+RewriteRule ^halls/?$ halls.php
+RewriteRule halls/(.*)$ halls.php?id=$1 [QSA,NC,L]
+
+RewriteRule ^movies/?$ movies.php
+RewriteRule movies/(.*)$ movies.php?id=$1 [QSA,NC,L]
+
+RewriteRule ^playtimes/?$ playtimes.php
+RewriteRule playtimes/(.*)$ playtimes.php?id=$1 [QSA,NC,L]
+
+RewriteRule ^prices/?$ prices.php
+RewriteRule prices/(.*)$ prices.php?id=$1 [QSA,NC,L]
+
+RewriteRule ^reservations/?$ reservations.php
+RewriteRule reservations/(.*)$ reservations.php?id=$1 [QSA,NC,L]
+
+RewriteRule ^tickets/?$ tickets.php
+RewriteRule tickets/(.*)$ tickets.php?id=$1 [QSA,NC,L]
+
+RewriteRule ^404/?$ 404.php
+ErrorDocument 404 https://www.jorn-wildenbeest.gcmediavormgeving.nl/cinemaapi/404
